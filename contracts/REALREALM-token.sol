@@ -39,8 +39,12 @@ contract REALREALM is
     ); // Staking Rewards - 93.000.000
     _mint(
       0x76B7d23274B73801327F22C2D2BA79E316500750,
-      93000000 * 10**decimals()
-    ); // Marketing & Ecosystem - 93.000.000
+      95000000 * 10**decimals()
+    ); // Marketing & Ecosystem - 95.000.000
+    _mint(
+      0x76B7d23274B73801327F22C2D2BA79E316500750,
+      100000000 * 10**decimals()
+    ); // Ecosystem - 100.000.000
     _mint(
       0x5A4010D01377A515F64633403F9cdaef91f8a631,
       100000000 * 10**decimals()
