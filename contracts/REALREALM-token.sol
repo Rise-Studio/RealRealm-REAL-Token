@@ -16,7 +16,7 @@ contract REALREALM is
   ERC20Permit,
   ERC20Votes
 {
-  constructor() ERC20("REALREALM", "REAL") ERC20Permit("REALREALM") {
+  constructor() ERC20("REAL REALM", "REAL") ERC20Permit("REAL REALM") {
     _mint(
       0xfFC8562d79073Bb64F8ad9E626Bff5B97884b41e,
       30000000 * 10**decimals()
@@ -40,7 +40,7 @@ contract REALREALM is
     _mint(
       0x76B7d23274B73801327F22C2D2BA79E316500750,
       95000000 * 10**decimals()
-    ); // Marketing & Ecosystem - 95.000.000
+    ); // Marketing - 95.000.000
     _mint(
       0x76B7d23274B73801327F22C2D2BA79E316500750,
       100000000 * 10**decimals()
