@@ -5,18 +5,14 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Snapshot.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 
 contract REALREALM is
   ERC20,
   ERC20Snapshot,
   Ownable,
-  Pausable,
-  ERC20Permit,
-  ERC20Votes
+  Pausable
 {
-  constructor() ERC20("REAL REALM", "REAL") ERC20Permit("REAL REALM") {
+  constructor() ERC20("REAL REALM", "REAL") {
     _mint(
       0xfFC8562d79073Bb64F8ad9E626Bff5B97884b41e,
       30000000 * 10**decimals()
@@ -85,20 +81,20 @@ contract REALREALM is
     address from,
     address to,
     uint256 amount
-  ) internal override(ERC20, ERC20Votes) {
+  ) internal override(ERC20) {
     super._afterTokenTransfer(from, to, amount);
   }
 
   function _mint(address to, uint256 amount)
     internal
-    override(ERC20, ERC20Votes)
+    override(ERC20)
   {
     super._mint(to, amount);
   }
 
   function _burn(address account, uint256 amount)
     internal
-    override(ERC20, ERC20Votes)
+    override(ERC20)
   {
     super._burn(account, amount);
   }
