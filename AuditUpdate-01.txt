@@ -1,0 +1,44 @@
+AUDIT:
+REA-01 | Initial Token Distribution : 
+
+We acknowledged the risk and intend to keep it this way for flexibility at the starting period of the project. In the future we will create a DAO for all the contracts when the project matures
+
+REL-01 | Centralization Risk : 
+- Updated: Owner only add successfully when owner of token ( was minted when token deploy) approve. Have low risk if owner be hacked. 
+- We use hardware wallet to secure private key also.
+
+REL-02 | Potential Reentrancy Attack : 
+- Updated Using Openzeppelin Reentrancy Lib
+
+REL-03 | Redundant Code : 
+- Updated ( As Recommendation )
+ 
+REL-04 | Division Before Multiplication: 
+- Updated ( As Recommendation )
+
+REP-01 | Centralization Risk: 
+- Updated. Owner only add when total amount token was approved
+
+REP-02 | Incorrect Update of : 
+- Fixed. Change flow to user can claim when Owner add success.
+REP-03 | Potential Reentrancy Attack: 
+- Updated Using Openzeppelin Reentrancy Lib
+
+REP-04 | Redundant Code: 
+- Updated
+
+REP-05 | Division Before Multiplication: 
+- Updated
+
+RER-01 | Centralization Risk: 
+- Same REL-01
+- We acknowledged the risk and intend to keep it this way for flexibility at the starting period of the project. In the future we will create a DAO for all the contracts when the project matures
+
+RER-02 | Potential Reentrancy Attack: 
+- Updated Using Openzeppelin Reentrancy Lib
+
+RER-03 | Division Before Multiplication: 
+- Updated
+
+RES-01, 02, 03, 04,05, RET-01, : 
+- uhClear code. Add new code. Not use old code.
