@@ -14,9 +14,9 @@ contract REALREALM is
 {
   constructor() ERC20("REAL REALM", "REAL") {
     _mint(
-      0x99dB552C7f2CE441F25feD8317D74f9f10F26213,
-      1000000000 * 10**decimals()
-    ); // Seed Sale - 30.000.000 - 3%
+      0xC335B4832493Ec8AaEf44Ff40E81e64c4555CD57,
+      4000000 * 10**decimals()
+    );
 
     transferOwnership(0xC335B4832493Ec8AaEf44Ff40E81e64c4555CD57);
   }
